@@ -119,7 +119,9 @@ Explicación. Drop a todas las conexiones INPUT/FORWARD y habilitado el OUTPUT:
 
 **Detalles:**
 > INPUT: Cadena de entrada de conexión/paquetes de la red
+> 
 > OUTPUT: Salida de paquetes
+> 
 > FORWARD: Reenvío de paquetes
 
 Tráfico local, habilitado:
