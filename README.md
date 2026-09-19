@@ -1,17 +1,20 @@
 Asegurando un servidor Linux en 5 minutos
 ==
 
-**Nota:** Se tomará como ejemplo, un Ubuntu `24.04`, aunque aplica a `26.04` también.
+**Nota:** Se tomará como ejemplo, un Ubuntu `24.04`, aunque aplica a `26.04` y a Debian 13 también.
 
 1. Desactivar acceso con el usuario root
 
-**Nota**: Ubuntu justo cuando instala, le permite a la persona que lo va a usar, crear un primer usuario. Este primer usuario tiene permisos `sudo`. Acá se asume que esto no sucedió, para demostrar el procedimiento.
+**Nota**: Ubuntu justo cuando instala, le permite a la persona que lo va a usar, crear un primer usuario. Este primer usuario tiene permisos `sudo`. Acá se asume que esto no sucedió, para demostrar el procedimiento. En Debían se debe entrar con `su -`.
 
 ##### Añadiendo el usuario
 
 ```bash
 # Nos hacemos admin temporalmente
 sudo su
+
+# Si es Debian
+su -
 
 #Añadimos el usuario
 adduser sysadmin
