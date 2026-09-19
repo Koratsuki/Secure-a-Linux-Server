@@ -15,6 +15,7 @@ sudo su
 
 # Si es Debian
 su -
+apt install -y sudo
 
 #Añadimos el usuario
 adduser sysadmin
