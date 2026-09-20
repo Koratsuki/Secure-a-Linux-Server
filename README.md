@@ -5,7 +5,7 @@ Asegurando un servidor Linux en 5 minutos
 
 1. Desactivar acceso con el usuario root
 
-**Nota**: Ubuntu justo cuando instala, le permite a la persona que lo va a usar, crear un primer usuario. Este primer usuario tiene permisos `sudo`. Acá se asume que esto no sucedió, para demostrar el procedimiento. En Debían se debe entrar con `su -`.
+**Nota**: Ubuntu justo cuando instala, le permite a la persona que lo va a usar, crear un primer usuario. Este primer usuario tiene permisos `sudo`. Acá se asume que esto no sucedió, para demostrar el procedimiento. En Debían se debe entrar con `su -`. Detalle, si usted instala Debian con el iso, y quiere habilitar sudo en el primer usuario del sistema, debe dejar la contraseña de root en blanco una vez se le pregunte en el instalador.
 
 ##### Añadiendo el usuario
 
