@@ -70,11 +70,23 @@ PubkeyAuthentication yes
 
 # La línea siguiente, descomentarla y ponerla en no
 PasswordAuthentication yes
+
+#Agregar
+
+# Máximo 3 intentos de autenticación por conexión
+MaxAuthTries 3
+
+# Limita conexiones SSH simultáneas que todavía no se han autenticado
+MaxStartups 10:30:60
+
+# El cliente tiene 30 segundos para autenticarse
+LoginGraceTime 30
 ```
 
-Guardar y salir. ¿Qué se hizo? Habilitamos acceso por llave únicamente, deshabilitamos el login del usuario root y evitamos que alguien pueda conectarse usando contraseña. Ahora debemos reiniciar SSH:
+Guardar y salir. ¿Qué se hizo? Habilitamos acceso por llave únicamente, deshabilitamos el login del usuario root y evitamos que alguien pueda conectarse usando contraseña. Ahora debemos, chequear la validez de la configuración y reiniciar SSH:
 
 ```bash
+sshd -t
 systemctl restart ssh
 ```
 
